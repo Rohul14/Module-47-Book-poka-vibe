@@ -29,7 +29,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#23BE0A]"
             >
               {links}
             </ul>
@@ -37,12 +37,13 @@ const NavBar = () => {
           <a className="text-2xl font-bold">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-[#23BE0A]">
             {links}
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end gap-4">
+          <a className="btn bg-[#23BE0A] text-white">Sign In</a>
+          <a className="btn bg-[#59C6D2] text-white">Sign Up</a>
         </div>
       </div>
   );
