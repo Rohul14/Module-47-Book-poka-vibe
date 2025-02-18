@@ -28,7 +28,7 @@ const BookDetail = () => {
   }
   console.log(book);
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 lg:mb-20 lg:mt-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 my-6 lg:mb-20 lg:mt-10">
             <div className="p-10 lg:p-20 bg-[#1313130D] rounded-2xl">
                 <img className="h-[564px] w-[425px]" src={image} alt="" />
             </div>
