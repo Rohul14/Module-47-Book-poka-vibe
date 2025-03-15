@@ -5,6 +5,7 @@ import "react-tabs/style/react-tabs.css";
 import { getStoredReadList, getStoredWishList } from "../../utility/addToDb";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WishBooks from "../WishBooks/WishBooks";
+import { Helmet } from "react-helmet-async";
 
 const Item = () => {
     const allBooks=useLoaderData()
@@ -29,6 +30,9 @@ const Item = () => {
     console.log(readBook);
   return (
     <div>
+      <Helmet>
+        <title>ListedBook</title>
+      </Helmet>
       <h4></h4>
       <Tabs>
         <TabList>

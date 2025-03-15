@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { addStoredReadList, addStoredWishList } from "../../utility/addToDb";
+import { Helmet } from "react-helmet-async";
 
 const BookDetail = () => {
   const { bookId } = useParams();
@@ -29,6 +30,9 @@ const BookDetail = () => {
   console.log(book);
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 my-6 lg:mb-20 lg:mt-10">
+        <Helmet>
+            <title>BookDetail</title>
+        </Helmet>
             <div className="p-10 lg:p-20 bg-[#1313130D] rounded-2xl">
                 <img className="w-32 h-40 mx-auto lg:h-[564px] lg:w-[425px]" src={image} alt="" />
             </div>
